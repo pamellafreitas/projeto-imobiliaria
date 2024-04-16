@@ -1,0 +1,315 @@
+@font-face {
+    font-family: humanist; 
+    src: url('fonte/Humanist521BT.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: humanist-light; 
+    src: url('fonte/Humanist521LightBT.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: humanist-bold; 
+    src: url('fonte/Humanist521BoldBT.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: humanist-black; 
+    src: url('fonte/Humanist\ 777\ Black\ BT.ttf') format('truetype'); 
+}
+
+
+
+body {
+    background: url('img/imobiliaria-fundo.jpg') no-repeat top/cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.inicio, .contato {
+    flex: 1;
+}
+
+/* Inicio */
+
+.inicio {
+    margin-bottom: 100px;
+    text-align: right;
+}
+
+h1 {
+    font-family: humanist-bold;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+h2 {
+    font-family: humanist-bold;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    margin-top: -1.5rem;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px; 
+    padding: 2px;
+    width: 20rem;
+    font-size: 1.4rem;
+    background-color: black;
+    color: #fff;
+    border: none;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 24px;
+    width: 200px;
+}
+
+/* Contato */
+
+.contato {
+    margin-top: 200px;
+    text-align: center;
+}
+
+h3 {
+    font-family: humanist-bold;
+    font-size: 1.5rem;
+    color: #08277A;
+    text-shadow: 2px 2px 4px rgba(254, 253, 253, 0.9);
+}
+
+.btn-contato {
+    font-family: humanist-black;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -12px;
+    padding-left: 18px;
+    width: 16rem;
+    border-radius: 5px;
+}
+
+.btn-contato .icon {
+    padding: 0;
+    width: 40px;
+}
+
+span {
+    font-size: 0.9rem;
+    padding-top: 8px;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+    text-align: center;
+    font-family: humanist-light;
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+@media (min-width:1700px) {
+
+    /* inicio */
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    button {
+        width: 25rem;
+    }
+    
+    img {
+        width: 250px;
+    }
+
+    /* Contato */
+
+    h3 {
+        font-size: 2rem;
+    }
+    
+    .btn-contato {
+        padding-inline: 20px;
+        width: 16rem;
+    }
+    
+    .btn-contato .icon {
+        padding: 0;
+        width: 40px;
+    }
+    
+    span {
+        font-size: 1rem;
+        padding-top: 8px;
+    }
+
+}
+
+@media (min-width:769px) and (max-width: 1200px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        background: url('img/imobiliaria-fundo.jpg') no-repeat right/cover;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+        /* inicio */
+
+        h1 {
+            margin-top: 50px;
+            font-size: 2rem;
+        }
+        
+        h2 {
+            font-size: 1.6rem;
+            padding-top: 4px;
+        }
+        
+        button {
+            width: 18rem;
+            font-size: 1.5rem;
+        }
+        
+        img {
+            width: 150px;
+        }
+    
+        /* Contato */
+    
+        h3 {
+            font-size: 1.5rem;
+        }
+        
+        .btn-contato {
+            padding: 10px 10px;
+            width: 12rem;
+            font-size: 1.5rem;
+        }
+        
+        .btn-contato .icon {
+            width: 30px;
+            margin-left: 5px;
+        }
+        
+        span {
+            font-size: 0.8rem;
+            padding-bottom: 6px;
+        }
+
+        .contato {
+            margin-top: -50px;
+            text-align: center;
+        }
+
+        footer h4 {
+            font-size: 1rem;
+        }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        background: url('img/imobiliaria-fundo.jpg') no-repeat right/cover;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+            /* inicio */
+
+            h1 {
+                margin-top: 50px;
+                font-size: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+                padding-top: 4px;
+            }
+            
+            button {
+                width: 16rem;
+                font-size: 1rem;
+            }
+            
+            img {
+                width: 150px;
+            }
+        
+            /* Contato */
+        
+            h3 {
+                font-size: 1rem;
+            }
+            
+            .btn-contato {
+                padding-inline: 20px;
+                width: 10rem;
+                font-size: 1rem;
+            }
+            
+            .btn-contato .icon {
+                width: 30px;
+                margin-left: 5px;
+            }
+            
+            span {
+                font-size: 0.8rem;
+                padding-bottom: 6px;
+            }
+    
+            .contato {
+                margin-top: -50px;
+                text-align: center;
+            }
+    
+            footer h4 {
+                font-size: 1rem;
+            }
+}
